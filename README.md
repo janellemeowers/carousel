@@ -1,4 +1,4 @@
-# carousel with javascript
+# Creating a Carousel with Javascript
 
 I wanted to practice creating a carousel with HTML/CSS and Javascript, as a way to do it without Bootstrap, and practice how the logic would work.
 
