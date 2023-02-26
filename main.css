@@ -1,0 +1,67 @@
+/* center, grid,  */
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* carousel is the parent, relative and then slides are absolute so they stack */
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  /* smooth transitions */
+  scroll-behavior: smooth;
+}
+
+/* hide first */
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  /* all properties transition */
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  /* clip to fit size */
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+/* absolute as well, z index on top */
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+/* when clicked, scale by 1.1 */
+.btn:active {
+  transform: scale(1.1);
+}
+
+/* bc absolute, left specifies how far from container */
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
